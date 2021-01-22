@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+    <script>
+        "use strict"
+
+        //Задание 5       
+
+        let arg1 = +prompt("Ввдите первое число")
+        let arg2 = +prompt("Введите второе число")
+        let operation = prompt("Введите знак действия уравнения")
+
+        /**
+         * Функция сложения
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function sum (a, b) {
+            return (a + b);
+        }
+        /**
+         * Функция вычетания
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function subtraction (a, b) {
+            return a - b;
+        }
+        /**
+         * Функция умножения
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function multiplication (a, b) {
+            return a * b;
+        }
+        /**
+         * Функция деления
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function division (a, b) {
+            return a / b;
+        }
+
+        function mathOperation (arg1, arg2, operation) {
+            switch (operation){
+                case "+":
+                    return sum(arg1, arg2);
+                case "-":
+                    return subtraction(arg1, arg2);
+                case "*":
+                    return multiplication(arg1, arg2);
+                case "/":
+                    return division(arg1, arg2);
+                default:
+                    throw new Error("Такая операция " + operation + " не доступна для вычесления")                
+            }
+        }
+        console.log(mathOperation(arg1, arg2, operation));
+
+    </script>
+</body>
+</html>

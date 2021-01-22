@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+    <script>
+        "use strict"
+
+        //Задание 4
+
+        let a = +prompt("Ввдите число а")
+        let b = +prompt("Введите число b")
+
+        /**
+         * Функция сложения
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function sum (a, b) {
+            return (a + b);
+        }
+        /**
+         * Функция вычетания
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function subtraction (a, b) {
+            return a - b;
+        }
+        /**
+         * Функция умножения
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function multiplication (a, b) {
+            return a * b;
+        }
+        /**
+         * Функция деления
+         * @param {number} a 
+         * @param {number} b 
+         * @returns {number}
+         */
+        function division (a, b) {
+            return a / b;
+        }
+
+        let summ = sum (a, b); 
+        console.log ("Ответ " + summ + " Сложение переменных a и b");
+
+        let summSub = subtraction (a, b);
+        console.log ("Ответ " + summSub + " Вычитание из переменной а");
+
+        let summMulti = multiplication (a, b);
+        console.log ("Ответ " + summMulti + " Умножение переменных a и b");
+
+        let summDivis = division (a, b);
+        console.log ("Ответ " + summDivis + " Деление переменной a на b");
+
+    </script>
+</body>
+</html>
